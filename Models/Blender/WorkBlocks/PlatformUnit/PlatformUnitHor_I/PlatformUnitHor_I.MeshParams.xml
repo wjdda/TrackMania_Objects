@@ -1,0 +1,5 @@
+<MeshParams Scale="1" MeshType="Static" Collection="Canyon">
+<Materials>
+<Material Name="Here goes name you gave to the material inside your 3d application" Model="TDSN" BaseTexture="Here goes location of custom texture set" PhysicsId="Concrete"/>
+</Materials>
+</MeshParams>

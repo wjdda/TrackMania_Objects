@@ -1,0 +1,33 @@
+<!--
+    #=================================================================================================================
+    #    Имя блока      :        PlatformUnitHor
+    #    Коллекция      :        Canyon
+    #    Тип блока      :        Static
+    #    Описание       :        Горизонтальный блок, как Arena, только в виде платформы с дырой
+    #    Стекуемость    :        Универсален
+    #    Иконка         :        Есть
+    #    Текстуры       :        Arena_D|N|S
+    #================================================================================================================= 
+ -->
+
+<Item Type="StaticObject" Collection="Canyon" AuthorName="wj_dda">
+    <Pivots>
+	    <Pivot Pos="0 0 0"/>
+	</Pivots>
+    
+    <GridSnap HStep="64" VStep="4" HOffset="32" VOffset="0"/>
+
+    <Phy>
+		<MoveShape Type="mesh" File="PlatformUnitHor.Shape.gbx"/>
+	</Phy>
+
+	<Vis>
+		<Mesh File="PlatformUnitHor.Mesh.gbx"/>
+	</Vis>
+
+	<Levitation VStep="4" GhostMode="True"/>
+
+	<Options AutoRotation="False" ManualPivotSwitch="False"/>
+
+	<PivotSnap Distance="0"/>
+</Item>

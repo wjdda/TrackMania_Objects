@@ -1,0 +1,34 @@
+<!--
+    #=================================================================================================================
+    #    Имя блока      :        ArenaUnitHor
+    #    Коллекция      :        Canyon
+    #    Тип блока      :        Static
+    #    Описание       :        Стандартный блок TM2 Canyon Arena
+    #    Стекуемость    :        Универсален
+    #    Иконка         :        Есть
+    #    Текстуры       :        Arena_D|N|S
+    #================================================================================================================= 
+ -->
+
+<Item Type="StaticObject" Collection="Canyon" AuthorName="wj_dda">
+    <Pivots>
+	    <Pivot Pos="0 0 0"/>
+	</Pivots>
+    
+     <GridSnap HStep="16" VStep="8" HOffset="16" VOffset="0"/>/>
+
+    <Phy>
+		<MoveShape Type="mesh" File="WTP_H_I.Shape.gbx"/>
+	</Phy>
+
+	<Vis>
+		<Mesh File="WTP_H_I.Mesh.gbx"/>
+	</Vis>
+
+	<Levitation VStep="8" GhostMode="True"/>
+
+    <!-- TODO Чтоб не помещать на другие объекты и чтоб вращать только по оси Z -->
+	<Options AutoRotation="False" ManualPivotSwitch="False"/>
+
+	<PivotSnap Distance="0"/>
+</Item>
